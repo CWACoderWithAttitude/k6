@@ -4,7 +4,7 @@ import { check, sleep } from 'k6';
 export const options = {
   stages: [
     { duration: '20s', target: 10 }, // Ramp-up
-    { duration: '40s', target: 10 }, // Hold
+    { duration: '30s', target: 30 }, // Hold
     { duration: '10s', target: 0 },  // Ramp-down
   ],
   thresholds: {
